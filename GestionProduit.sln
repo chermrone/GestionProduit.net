@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gp.Console", "Gp.Console\Gp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gp.Domain", "Gp.Domain\Gp.Domain.csproj", "{81A36360-5279-4628-8BE3-52EAABEA394A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gp.Service", "Gp.Service\Gp.Service.csproj", "{2A3EFC1A-84D8-42C2-83AF-ED6F3E17D1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gp.Data", "Gp.Data\Gp.Data.csproj", "{0B865607-90C9-4667-9F75-1332F2BAE0C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{81A36360-5279-4628-8BE3-52EAABEA394A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81A36360-5279-4628-8BE3-52EAABEA394A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81A36360-5279-4628-8BE3-52EAABEA394A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A3EFC1A-84D8-42C2-83AF-ED6F3E17D1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A3EFC1A-84D8-42C2-83AF-ED6F3E17D1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A3EFC1A-84D8-42C2-83AF-ED6F3E17D1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A3EFC1A-84D8-42C2-83AF-ED6F3E17D1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B865607-90C9-4667-9F75-1332F2BAE0C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B865607-90C9-4667-9F75-1332F2BAE0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B865607-90C9-4667-9F75-1332F2BAE0C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B865607-90C9-4667-9F75-1332F2BAE0C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

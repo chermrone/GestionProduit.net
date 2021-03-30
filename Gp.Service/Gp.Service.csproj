@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{81A36360-5279-4628-8BE3-52EAABEA394A}</ProjectGuid>
+    <ProjectGuid>{2A3EFC1A-84D8-42C2-83AF-ED6F3E17D1E8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gp.Domain</RootNamespace>
-    <AssemblyName>Gp.Domain</AssemblyName>
+    <RootNamespace>Gp.Service</RootNamespace>
+    <AssemblyName>Gp.Service</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,18 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adress.cs" />
-    <Compile Include="Biological.cs" />
-    <Compile Include="Category.cs" />
-    <Compile Include="Chemical.cs" />
-    <Compile Include="Concept.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="IntExtension.cs" />
+    <Compile Include="ServiceProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gp.Data\Gp.Data.csproj">
+      <Project>{0b865607-90c9-4667-9f75-1332f2bae0c3}</Project>
+      <Name>Gp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gp.Domain\Gp.Domain.csproj">
+      <Project>{81a36360-5279-4628-8be3-52eaabea394a}</Project>
+      <Name>Gp.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

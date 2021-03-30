@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{81A36360-5279-4628-8BE3-52EAABEA394A}</ProjectGuid>
+    <ProjectGuid>{0B865607-90C9-4667-9F75-1332F2BAE0C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gp.Domain</RootNamespace>
-    <AssemblyName>Gp.Domain</AssemblyName>
+    <RootNamespace>Gp.Data</RootNamespace>
+    <AssemblyName>Gp.Data</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,18 +51,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adress.cs" />
-    <Compile Include="Biological.cs" />
-    <Compile Include="Category.cs" />
-    <Compile Include="Chemical.cs" />
-    <Compile Include="Concept.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="GpContext.cs" />
+    <Compile Include="Migrations\202103100919180_InitialCreate.cs" />
+    <Compile Include="Migrations\202103100919180_InitialCreate.designer.cs">
+      <DependentUpon>202103100919180_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103100958428_typeComplexe.cs" />
+    <Compile Include="Migrations\202103100958428_typeComplexe.designer.cs">
+      <DependentUpon>202103100958428_typeComplexe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103101022490_DataAnnotation.cs" />
+    <Compile Include="Migrations\202103101022490_DataAnnotation.designer.cs">
+      <DependentUpon>202103101022490_DataAnnotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103101025154_DataAnnotation2.cs" />
+    <Compile Include="Migrations\202103101025154_DataAnnotation2.designer.cs">
+      <DependentUpon>202103101025154_DataAnnotation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gp.Domain\Gp.Domain.csproj">
+      <Project>{81a36360-5279-4628-8be3-52eaabea394a}</Project>
+      <Name>Gp.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103100919180_InitialCreate.resx">
+      <DependentUpon>202103100919180_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103100958428_typeComplexe.resx">
+      <DependentUpon>202103100958428_typeComplexe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103101022490_DataAnnotation.resx">
+      <DependentUpon>202103101022490_DataAnnotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103101025154_DataAnnotation2.resx">
+      <DependentUpon>202103101025154_DataAnnotation2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

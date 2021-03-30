@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace Gp.Domain
 {
-    class Chemical:Product//Chemical hérite de Product
+    public class Chemical : Product//Chemical hérite de Product
     {
-        public string City { get; set; }
-        public string LabName { get; set; }
-        public string StreetAddress { get; set; }
+         public string LabName { get; set; }
+
+        public Adress Adress { get; set; }
+        public override void GetMyType()
+        {
+            Console.WriteLine("je suis un produit chimique");
+        }
+        public override void GetDetails()
+        {
+            base.GetDetails();
+            Console.WriteLine(LabName);
+        }
     }
 }

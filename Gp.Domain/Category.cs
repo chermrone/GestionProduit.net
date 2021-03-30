@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace Gp.Domain
 {
-    public class Category
+    public class Category : Concept
     {
         public int CategoryId { get; set; }
         public string Name { get; set; }
-        public List<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
 
-
+        public override void GetDetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
